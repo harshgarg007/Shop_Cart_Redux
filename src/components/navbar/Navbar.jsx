@@ -2,6 +2,8 @@ import React from 'react'
 import './style.css'
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
+
+
   return (
     <nav className='nav'>
          <NavLink to={"/"}  activeClassName="active" >Shopping Cart</NavLink>
