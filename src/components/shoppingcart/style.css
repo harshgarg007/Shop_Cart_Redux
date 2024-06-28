@@ -1,0 +1,21 @@
+.shop {
+    display: flex;
+}
+
+/* .products {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.products, .cart {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product, .cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+  }

@@ -1,0 +1,22 @@
+.nav {
+    background-color: #333; /* Background color of the navbar */
+    padding: 10px; /* Padding around the links */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Space evenly between links */
+  }
+  
+  .nav a {
+    color: white; /* Text color of the links */
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; /* Space between links */
+    padding: 8px 12px; /* Padding inside links */
+    border-radius: 4px; /* Rounded corners for links */
+  }
+  
+  .nav a:hover {
+    background-color: #555; /* Darker background color on hover */
+  }
+  
+  .nav .active {
+    background-color: green; /* Background color for active tab */
+  }
