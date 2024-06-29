@@ -46,3 +46,28 @@
   .total {
     text-align: center;
   }
+
+  .filters {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .category {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+  }
+
+  .sort-inp {
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .filter-text {
+    font-size: 16px;
+  }

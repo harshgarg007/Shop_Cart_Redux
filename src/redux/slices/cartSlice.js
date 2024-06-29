@@ -17,6 +17,8 @@ const initialState = {
     products: [],
     cart: [],
     totalAmount: 0,
+    selectedCategory:"All",
+    sortBy: "",
     status: 'idle', // Initial status of the async operation
     error: null // Initialize error state to null
 };
@@ -53,6 +55,12 @@ const cartSlice = createSlice({
                 // Decrease the total amount by the price of the removed item
                 state.totalAmount -= Math.round(action.payload.price);
             }
+        },
+        setCategory: (state,action) => {
+            state.selectedCategory = action.payload;
+        },
+        setSortBy: (state,action) => {
+            state.sortBy = action.payload;
         }
     },
     extraReducers: (builder) => {
@@ -75,7 +83,7 @@ const cartSlice = createSlice({
 });
 
 // Export action creators for addToCart and removeFromCart
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, setCategory, setSortBy } = cartSlice.actions;
 
 // Export the reducer function
 export default cartSlice.reducer;
