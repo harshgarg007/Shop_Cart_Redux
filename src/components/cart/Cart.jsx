@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToCart, removeFromCart } from '../../redux/slices/cartSlice'
+import './style.css'
 import { toast } from 'react-toastify';
 const Cart = () => {
     const dispatch = useDispatch();
@@ -20,7 +21,7 @@ const Cart = () => {
     <div className="cart">
       {cart.map((item) => (
         <div key={item.id} className="cart-item">
-           <img src={item.image} alt="" width={"80px"} />
+           <img src={item.image} alt="" width={"80px"} height={"80px"} />
           <h3>{item.title.slice(0, 11)}</h3>
           <p>₹{item.price.toFixed(0)}</p>
           <p>Quantity: {item.quantity}</p>

@@ -1,0 +1,30 @@
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  /* margin: 10px; */
+  width: 180px;
+  text-align: center;
+}
+
+.cartBtn {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin: 2px;
+  width: 30px;
+}
+
+.total {
+  text-align: center;
+  margin-top: 20px;
+}
