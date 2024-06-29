@@ -70,7 +70,7 @@ const ShoppingCart = () => {
         </select>
 
        <div className="category">
-       <span className="filter-text">Filter by Category :</span>
+       <span className="filter-text">Category</span>
         <select className="sort-inp" onChange={handleCategoryChange}>
           <option value="All">All</option>
           <option value="electronics">Electronics</option>
